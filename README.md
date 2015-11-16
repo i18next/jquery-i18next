@@ -1,2 +1,5 @@
-# i18next-jquery
-i18next plugin for jquery usage
+# i18next-xhr-backend
+
+
+`gulp build` builds release version
+`gulp build --debug` will build unminified version
