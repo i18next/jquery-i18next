@@ -91,15 +91,10 @@ gulp.task('babel', function () {
 gulp.task('rename', function () {
   return gulp
     .src('./bin/index.js')
-    .pipe(rename('./bin/' + standaloneName + '.min.js'))
+    .pipe(rename('./' + standaloneName + '.min.js'))
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('copy', function () {
-  return gulp
-    .src('./bin/' + standaloneName + '.min.js')
-    .pipe(gulp.dest('./'));
-});
 
 function inc(version) {
   if (!version) return;
@@ -178,5 +173,5 @@ gulp.task('watch', function() { return watch(); });
 gulp.task('bump', function() { return inc(argv.v); });
 
 gulp.task('default', ['watch']);
-gulp.task('build', ['concat', 'babel', 'rename', 'copy']);
+gulp.task('build', ['concat', 'babel', 'rename']);
 gulp.task('publish', ['bump']);
