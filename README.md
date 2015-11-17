@@ -1,5 +1,7 @@
 # Introduction
 
+Source can be loaded via npm, bower or downloaded from this repo.
+
 Simplifies i18next usage in projects built based on jquery, like:
 
 page source:
