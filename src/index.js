@@ -13,8 +13,6 @@ export default function init(i18next, $, options = {}) {
 
   options = { ...options, ...defaults };
 
-
-
   function parse(ele, key, opts) {
     if (key.length === 0) return;
 
