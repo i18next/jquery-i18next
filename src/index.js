@@ -50,7 +50,7 @@ export default function init(i18next, $, options = {}) {
       // we change into the dom
       ele.attr(attr, translated);
     } else {
-      ele.attr(attr, i18next.t(key, extendDefault(opts, ele.attr())));
+      ele.attr(attr, i18next.t(key, extendDefault(opts, ele.attr(attr))));
     }
   }
 
