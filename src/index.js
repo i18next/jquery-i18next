@@ -9,7 +9,7 @@ const defaults = {
   parseDefaultValueFromContent: true
 };
 
-export default function init(i18next, $, options = {}) {
+function init(i18next, $, options = {}) {
 
   options = { ...options, ...defaults };
 
@@ -107,3 +107,7 @@ export default function init(i18next, $, options = {}) {
   // selector function $(mySelector).localize(opts);
   $.fn[options.handleName] = handle;
 }
+
+export default {
+  init: init
+};
