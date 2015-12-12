@@ -1,5 +1,5 @@
 {
-  "name": "i18next-jquery",
+  "name": "jquery-i18next",
   "version": "0.0.5",
   "description": "i18next plugin for jquery usage",
   "main": "./bin/index.js",
@@ -14,11 +14,11 @@
     "jquery",
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/i18next/i18next-jquery",
-  "bugs": "https://github.com/i18next/i18next-jquery/issues",
+  "homepage": "https://github.com/i18next/jquery-i18next",
+  "bugs": "https://github.com/i18next/jquery-i18next/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/i18next/i18next-jquery.git"
+    "url": "https://github.com/i18next/jquery-i18next.git"
   },
   "dependencies": {},
   "devDependencies": {
