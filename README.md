@@ -2,12 +2,14 @@
 
 Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next), bower or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/i18next-jquery.min.js) from this repo.
 
+If you don't use a module loader it will be added to window.i18nextJquery
+
 ```
 # npm package
 $ npm install jquery-i18next
 
 # bower
-$ bower install i18next/jquery-i18next
+$ bower install jquery-i18next
 ```
 
 Simplifies i18next usage in projects built based on jquery, like:

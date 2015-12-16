@@ -1,5 +1,5 @@
 {
-  "name": "i18next-jquery",
+  "name": "jquery-i18next",
   "version": "0.0.8",
   "main": "./bin/index.js",
   "dependencies": {},

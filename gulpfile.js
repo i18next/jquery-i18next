@@ -22,7 +22,8 @@ var gulp = require('gulp'),
 var pkg = require('./package.json');
 
 var entry = 'index.js',
-    standaloneName = 'i18next-jquery',
+    standaloneName = 'i18nextJquery',
+    standaloneFilename = 'i18next-jquery',
     output = 'index.js';
 
 function compile(watch) {
@@ -91,7 +92,7 @@ gulp.task('babel', function () {
 gulp.task('rename', function () {
   return gulp
     .src('./bin/index.js')
-    .pipe(rename('./' + standaloneName + '.min.js'))
+    .pipe(rename('./' + standaloneFilename + '.min.js'))
     .pipe(gulp.dest('./'));
 });
 
