@@ -11,7 +11,7 @@ const defaults = {
 
 function init(i18next, $, options = {}) {
 
-  options = { ...options, ...defaults };
+  options = { ...defaults, ...options };
 
   function parse(ele, key, opts) {
     if (key.length === 0) return;
