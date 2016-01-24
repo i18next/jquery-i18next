@@ -101,7 +101,7 @@ function init(i18next, $, options = {}) {
   };
 
   // $.t $.i18n shortcut
-  $[options.tName] = i18next.t;
+  $[options.tName] = i18next.t.bind(i18next);
   $[options.i18nName] = i18next;
 
   // selector function $(mySelector).localize(opts);
