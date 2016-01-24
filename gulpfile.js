@@ -89,7 +89,7 @@ gulp.task('babel', function () {
     .pipe(gulp.dest('./lib'));
 });
 
-gulp.task('rename', ['concat', 'babel'] function () {
+gulp.task('rename', ['concat', 'babel'], function () {
   return gulp
     .src('./bin/index.js')
     .pipe(rename('./' + standaloneFilename + '.min.js'))
