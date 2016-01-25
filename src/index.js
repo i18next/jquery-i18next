@@ -3,8 +3,8 @@ const defaults = {
   i18nName: 'i18n',
   handleName: 'localize',
   selectorAttr: 'data-i18n',
-  targetAttr: 'data-i18n-target',
-  optionsAttr: 'data-i18n-options',
+  targetAttr: 'i18n-target',
+  optionsAttr: 'i18n-options',
   useOptionsAttr: false,
   parseDefaultValueFromContent: true
 };
