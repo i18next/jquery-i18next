@@ -1,6 +1,6 @@
 {
   "name": "jquery-i18next",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "i18next plugin for jquery usage",
   "main": "./bin/index.js",
   "keywords": [
