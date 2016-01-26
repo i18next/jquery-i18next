@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/2.0.22/i18next.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/0.0.14/i18next-jquery.min.js" ></script>
+  </head>
+
+  <body>
+
+    <ul class="nav">
+      <li><a href="#" data-i18n="nav.home"></a></li>
+      <li><a href="#" data-i18n="nav.page1"></a></li>
+      <li><a href="#" data-i18n="nav.page2"></a></li>
+    </ul>
+
+    <script>
+      // use plugins and options as needed, for options, detail see
+      // http://i18next.com/docs/
+      i18next.init({
+        lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+        resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
+          en: {
+            translation: {
+              nav: {
+                home: 'Home',
+                page1: 'Page One',
+                page2: 'Page Two'
+              }
+            }
+          }
+        }
+      }, function(err, t) {
+        // for options see
+        // https://github.com/i18next/jquery-i18next#initialize-the-plugin
+        i18nextJquery.init(i18next, $);
+
+        // start localizing, details:
+        // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+        $('.nav').localize();
+      });
+    </script>
+
+  </body>
+
+</html>
