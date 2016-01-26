@@ -1,6 +1,6 @@
 {
   "name": "jquery-i18next",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "./bin/index.js",
   "dependencies": {},
   "ignore": [
