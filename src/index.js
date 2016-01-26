@@ -80,7 +80,7 @@ function init(i18next, $, options = {}) {
 
     if (options.useOptionsAttr === true) {
       let clone = {};
-      clone = { clone, ...options };
+      clone = { clone, ...opts };
 
       delete clone.lng;
       ele.data(options.optionsAttr, clone);
