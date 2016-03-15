@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define('jquery-i18next', factory) :
-  (global.jquery-i18next = factory());
+  typeof define === 'function' && define.amd ? define('jqueryI18next', factory) :
+  (global.jqueryI18next = factory());
 }(this, function () { 'use strict';
 
   var babelHelpers = {};

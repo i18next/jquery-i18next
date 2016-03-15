@@ -25,7 +25,7 @@ export default {
     babel(babelOptions),
     npm({ jsnext: true })
   ].concat(compress ? uglify() : []),
-  moduleName: 'jquery-i18next',
-  moduleId: 'jquery-i18next',
+  moduleName: 'jqueryI18next',
+  moduleId: 'jqueryI18next',
   dest
 };

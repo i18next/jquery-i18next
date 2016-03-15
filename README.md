@@ -2,7 +2,7 @@
 
 Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next), bower or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/i18next-jquery.min.js) from this repo.
 
-If you don't use a module loader it will be added to window.jquery-i18next
+If you don't use a module loader it will be added to window.jqueryI18next
 
 ```
 # npm package
