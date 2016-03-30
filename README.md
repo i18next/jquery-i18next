@@ -64,6 +64,20 @@ i18nextJquery.init(i18nextInstance, $, {
 });
 ```
 
+## using options in translation function
+
+```js
+<a id="btn1" href="#" data-i18n="myKey"></a>
+$("#btn1").localize(options);
+```
+
+or
+
+```js
+<a id="btn1" href="#" data-i18n="myKey" data-i18n-options="{ 'a': 'b' }"></a>
+$("#btn1").localize();
+```
+
 ## usage of selector function
 
 ### translate an element
