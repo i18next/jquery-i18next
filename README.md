@@ -52,7 +52,7 @@ $(".nav").localize();
 ## Initialize the plugin
 
 ```js
-i18nextJquery.init(i18nextInstance, $, {
+jqueryI18next.init(i18nextInstance, $, {
   tName: 't', // --> appends $.t = i18next.t
   i18nName: 'i18n', // --> appends $.i18n = i18next
   handleName: 'localize', // --> appends $(selector).localize(opts);
