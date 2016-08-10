@@ -64,9 +64,17 @@
       } else if (attr === 'text') {
         ele.text(i18next.t(key, extendDefault(opts, ele.text())));
       } else if (attr === 'prepend') {
-        ele.prepend(i18next.t(key, extendDefault(opts, ele.html())));
+        if (ele.find('#' + key).length > 0) {
+          ele.find('#' + key).html(i18next.t(key, extendDefault(opts, ele.html())));
+        } else {
+          ele.prepend('<span id=' + key.split(' ').join('') + '>' + i18next.t(key, extendDefault(opts, ele.html())) + '</span>');
+        }
       } else if (attr === 'append') {
-        ele.append(i18next.t(key, extendDefault(opts, ele.html())));
+        if (ele.find('#' + key).length > 0) {
+          ele.find('#' + key).html(i18next.t(key, extendDefault(opts, ele.html())));
+        } else {
+          ele.append('<span id=' + key.split(' ').join('') + '>' + i18next.t(key, extendDefault(opts, ele.html())) + '</span>');
+        }
       } else if (attr.indexOf('data-') === 0) {
         var dataAttr = attr.substr('data-'.length);
         var translated = i18next.t(key, extendDefault(opts, ele.data(dataAttr)));
