@@ -2,7 +2,7 @@
 
 Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next), bower or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/i18next-jquery.min.js) from this repo.
 
-If you don't use a module loader it will be added to window.i18nextJquery
+If you don't use a module loader it will be added to window.jqueryI18next
 
 ```
 # npm package
@@ -52,16 +52,30 @@ $(".nav").localize();
 ## Initialize the plugin
 
 ```js
-i18nextJquery.init(i18nextInstance, $, {
+jqueryI18next.init(i18nextInstance, $, {
   tName: 't', // --> appends $.t = i18next.t
   i18nName: 'i18n', // --> appends $.i18n = i18next
   handleName: 'localize', // --> appends $(selector).localize(opts);
   selectorAttr: 'data-i18n', // selector for translating elements
-  targetAttr: 'data-i18n-target', // element attribute to grab target element to translate (if diffrent then itself)
-  optionsAttr: 'data-i18n-options', // element attribute that contains options, will load/set if useOptionsAttr = true
+  targetAttr: 'i18n-target', // data-() attribute to grab target element to translate (if diffrent then itself)
+  optionsAttr: 'i18n-options', // data-() attribute that contains options, will load/set if useOptionsAttr = true
   useOptionsAttr: false, // see optionsAttr
   parseDefaultValueFromContent: true // parses default values from content ele.val or ele.text
 });
+```
+
+## using options in translation function
+
+```js
+<a id="btn1" href="#" data-i18n="myKey"></a>
+$("#btn1").localize(options);
+```
+
+or
+
+```js
+<a id="btn1" href="#" data-i18n="myKey" data-i18n-options="{ 'a': 'b' }"></a>
+$("#btn1").localize();
 ```
 
 ## usage of selector function
