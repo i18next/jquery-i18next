@@ -17,8 +17,6 @@ function init(i18next, $, options = {}) {
     if (key.length === 0) return;
 
     let attr = 'text';
-    // Removing any spaces in key for valid html5 id
-    let trimmedKey = key.split(' ').join('');
 
     if (key.indexOf('[') === 0) {
       let parts = key.split(']');
@@ -40,17 +38,9 @@ function init(i18next, $, options = {}) {
     } else if (attr === 'text') {
       ele.text(i18next.t(key, extendDefault(opts, ele.text())));
     } else if (attr === 'prepend') {
-      if (ele.find('#' + trimmedKey).length > 0) {
-        ele.find('#' + trimmedKey).html(i18next.t(key, extendDefault(opts, ele.html())));
-      } else {
-        ele.prepend('<span id=' + trimmedKey + '>' + i18next.t(key, extendDefault(opts, ele.html())) + '</span>');
-      }
+      ele.prepend(i18next.t(key, extendDefault(opts, ele.html())));
     } else if (attr === 'append') {
-      if (ele.find('#' + trimmedKey).length > 0) {
-        ele.find('#' + trimmedKey).html(i18next.t(key, extendDefault(opts, ele.html())));
-      } else {
-        ele.append('<span id=' + trimmedKey + '>' + i18next.t(key, extendDefault(opts, ele.html())) + '</span>');
-      }
+      ele.append(i18next.t(key, extendDefault(opts, ele.html())));
     } else if (attr.indexOf('data-') === 0) {
       let dataAttr = attr.substr(('data-').length);
       let translated = i18next.t(key, extendDefault(opts, ele.data(dataAttr)));
