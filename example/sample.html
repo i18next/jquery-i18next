@@ -13,6 +13,10 @@
       <li><a href="#" data-i18n="nav.page2"></a></li>
     </ul>
 
+    <div class="content">
+      <input data-i18n="[placeholder]input.placeholder" />
+    </div>
+
     <script>
       // use plugins and options as needed, for options, detail see
       // http://i18next.com/docs/
@@ -21,6 +25,9 @@
         resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
           en: {
             translation: {
+              input: {
+                placeholder: "a placeholder"
+              },
               nav: {
                 home: 'Home',
                 page1: 'Page One',
@@ -37,6 +44,7 @@
         // start localizing, details:
         // https://github.com/i18next/jquery-i18next#usage-of-selector-function
         $('.nav').localize();
+        $('.content').localize();
       });
     </script>
 
