@@ -74,9 +74,11 @@ $("#btn1").localize(options);
 or
 
 ```js
-<a id="btn1" href="#" data-i18n="myKey" data-i18n-options="{ 'a': 'b' }"></a>
+<a id="btn1" href="#" data-i18n="myKey" data-i18n-options='{ "a": "b" }'></a>
 $("#btn1").localize();
 ```
+
+`data-i18n-options` attribute must be a valid JSON object.
 
 ## usage of selector function
 
