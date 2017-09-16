@@ -82,7 +82,8 @@ function init(i18next, $) {
       var keys = key.split(';');
 
       $.each(keys, function (m, k) {
-        if (k !== '') parse(target, k, opts);
+        // .trim(): Trim the comma-separated parameters on the data-i18n attribute.
+        if (k !== '') parse(target, k.trim(), opts);
       });
     } else {
       parse(target, key, opts);

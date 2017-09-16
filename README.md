@@ -2,6 +2,17 @@
 
 Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next), bower or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/jquery-i18next.min.js) from this repo.
 
+--------------
+**NEWS: localization as a service - locize.com**
+
+Needing a translation management? Want to edit your translations with an InContext Editor? Use the orginal provided to you by the maintainers of i18next!
+
+![locize](https://www.i18next.com/assets/img/locize_recap_big_low.gif)
+
+With using [locize](http://locize.com/) you directly support the future of i18next and react-i18next.
+
+--------------
+
 If you don't use a module loader it will be added to window.jqueryI18next
 
 ```
@@ -146,14 +157,3 @@ $("#btn1").localize();
 <a id="btn1" href="#" data-i18n="[data-someDataAttribute]key.for.content"></a>
 $("#btn1").localize();
 ```
-
---------------
-**NEWS: localization as a service - locize.com**
-
-Needing a translation management? Want to edit your translations with an InContext Editor? Use the orginal provided to you by the maintainers of i18next!
-
-![locize](https://www.i18next.com/assets/img/locize_recap_big_low.gif)
-
-With using [locize](http://locize.com/) you directly support the future of i18next and react-i18next.
-
---------------
