@@ -157,3 +157,13 @@ $("#btn1").localize();
 <a id="btn1" href="#" data-i18n="[data-someDataAttribute]key.for.content"></a>
 $("#btn1").localize();
 ```
+
+--------------
+
+<h3 align="center">Gold Sponsors</h3>
+
+<p align="center">
+  <a href="https://locize.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/i18next/i18next/master/assets/locize_sponsor_240.gif" width="240px">
+  </a>
+</p>
