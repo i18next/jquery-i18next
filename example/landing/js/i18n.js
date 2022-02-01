@@ -29,6 +29,10 @@ $(function () {
   // use plugins and options as needed, for options, detail see
   // https://www.i18next.com
   i18next
+    // i18next-http-backend
+    // loads translations from your server
+    // https://github.com/i18next/i18next-http-backend
+    .use(i18nextHttpBackend)
     // detect user language
     // learn more: https://github.com/i18next/i18next-browser-languageDetector
     .use(i18nextBrowserLanguageDetector)
@@ -45,49 +49,7 @@ $(function () {
       //     }
       //     return value;
       //   }
-      // },
-      resources: {
-        en: {
-          translation: {
-            head: {
-              title: "My Awesome Landing-Page",
-              description: "The description of this awesome landing page."
-            },
-            about: {
-              title: "About my awesome Landing-Page",
-              description: "This is a fantastic website presenting..."
-            },
-            counter_one: "Changed language just once",
-            counter_other: "Changed language already {{count}} times",
-            footer: {
-              date: "It's {{date, LLLL}}",
-              date_morning: "Good morning! Today is {{date, LLLL}} | Have a nice day!",
-              date_afternoon: "Good afternoon! It\'s {{date, LLLL}}",
-              date_evening: "Good evening! Today was the {{date, LLLL}}"
-            }
-          }
-        },
-        de: {
-          translation: {
-            head: {
-              title: "Meine grossartige Webseite",
-              description: "Die Beschreibung dieser grossartigen Webseite."
-            },
-            about: {
-              title: "Über meine grossartige Webseite",
-              description: "Dies ist eine fantastische Website, die sich folgendermassen präsentiert..."
-            },
-            counter_one: "Die Sprache wurde erst ein mal gewechselt",
-            counter_other: "Die Sprache wurde {{count}} mal gewechselt",
-            footer: {
-              date: "Es ist {{date, LLLL}}",
-              date_morning: "Guten Morgen! Heute ist {{date, LLLL}} | Wünsche einen schönen Tag!",
-              date_afternoon: "Guten Tag! Es ist {{date, LLLL}}",
-              date_evening: "Guten Abend! Heute war {{date, LLLL}}"
-            }
-          }
-        }
-      }
+      // }
     }, (err, t) => {
       if (err) return console.error(err);
 
@@ -99,8 +61,6 @@ $(function () {
       // for options see
       // https://github.com/i18next/jquery-i18next#initialize-the-plugin
       jqueryI18next.init(i18next, $, { useOptionsAttr: true });
-
-      rerender();
 
       // fill language switcher
       Object.keys(lngs).map((lng) => {
@@ -124,5 +84,10 @@ $(function () {
           }
         });
       });
+
+      rerender();
+
+      $('#loader').hide();
+      $('#content').show();
     });
 });

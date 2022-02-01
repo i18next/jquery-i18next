@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Meine grossartige Webseite",
+    "description": "Die Beschreibung dieser grossartigen Webseite."
+  },
+  "menu": {
+    "home": "Meine grossartige Webseite",
+    "homeInFooter": "Hauptseite",
+    "about": "Über uns",
+    "services": "Dienste",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "title": "Webseite",
+    "subTitle": "Ein Untertitel"
+  },
+  "section": {
+    "one": {
+      "title": "Funktion:<br>Eins",
+      "description": "Diese geniale Funktion wird..."
+    },
+    "two": {
+      "title": "Bester Dienst<br>aller Zeiten",
+      "description": "Aktivieren Sie diese Einstellung, um die volle Leistung von..."
+    },
+    "three": {
+      "title": "Zu<br>guter Letzt",
+      "description": "Der beste Kundensupport, den Sie jemals haben können."
+    }
+  },
+  "about": {
+    "title": "Über meine grossartige Webseite",
+    "description": "Dies ist eine fantastische Website, die sich folgendermassen präsentiert..."
+  },
+  "contact": "Bleiben wir in Kontakt:",
+  "footer": {
+    "counter_one": "Die Sprache wurde erst ein mal gewechselt",
+    "counter_other": "Die Sprache wurde {{count}} mal gewechselt",
+    "date": "Es ist {{date, LLLL}}",
+    "date_morning": "Guten Morgen! Heute ist {{date, LLLL}} | Wünsche einen schönen Tag!",
+    "date_afternoon": "Guten Tag! Es ist {{date, LLLL}}",
+    "date_evening": "Guten Abend! Heute war {{date, LLLL}}",
+    "copyright": "Urheberrecht &copy; Meine fantastische Landing-Page Alle Rechte vorbehalten"
+  }
+}
