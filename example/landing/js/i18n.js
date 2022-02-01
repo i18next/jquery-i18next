@@ -25,6 +25,8 @@ const locizeOptions = {
   apiKey: '302aca54-2ea8-4b9f-b5f0-df1369c59427' // YOU should not expose your apps API key to production!!!
 };
 
+i18next.on('editorSaved', rerender);
+
 $(function () {
   const locizeBackend = new i18nextLocizeBackend(locizeOptions, (err, opts, lngs) => {
     if (err) return console.error(err);
