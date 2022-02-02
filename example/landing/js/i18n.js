@@ -57,7 +57,7 @@ $(function () {
         fallbackLng: 'en',
         backend: locizeOptions,
         locizeLastUsed: locizeOptions,
-        saveMissing: true
+        saveMissing: true // do not enable it on production
         // interpolation: {
         //   // legacy usage
         //   format: (value, format, lng) => {
