@@ -1,7 +1,7 @@
 {
   "name": "jquery-i18next",
   "version": "1.2.1",
-  "description": "i18next plugin for jquery usage",
+  "description": "jQuery-i18next is a jQuery based Javascript internationalization library on top of i18next. It helps you to easily internationalize your web applications.",
   "main": "index.js",
   "jsnext:main": "dist/es/index.js",
   "keywords": [
