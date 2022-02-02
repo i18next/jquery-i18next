@@ -25,7 +25,7 @@ const locizeOptions = {
   apiKey: '302aca54-2ea8-4b9f-b5f0-df1369c59427' // YOU should not expose your apps API key to production!!!
 };
 
-i18next.on('editorSaved', rerender);
+i18next.on('editorSaved', rerender); // used for the inContext editor
 
 $(function () {
   const locizeBackend = new i18nextLocizeBackend(locizeOptions, (err, opts, lngs) => {

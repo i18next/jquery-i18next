@@ -13,6 +13,10 @@ With using [locize](http://locize.com/?utm_source=jquery_i18next_readme&utm_medi
 
 --------------
 
+## Advice:
+
+To see jquery-i18next in a working app example, check out [this blog post](https://dev.to/adrai/the-progressive-guide-to-jquery-internationalization-i18n-using-i18next-3dc3) and [this example](https://github.com/i18next/jquery-i18next/tree/master/example/landing).
+
 If you don't use a module loader it will be added to window.jqueryI18next
 
 ```
