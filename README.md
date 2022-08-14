@@ -15,7 +15,7 @@ With using [locize](http://locize.com/?utm_source=jquery_i18next_readme&utm_medi
 
 ## Advice:
 
-To see jquery-i18next in a working app example, check out [this blog post](https://dev.to/adrai/the-progressive-guide-to-jquery-internationalization-i18n-using-i18next-3dc3) and [this example](https://github.com/i18next/jquery-i18next/tree/master/example/landing).
+To see jquery-i18next in a working app example, check out [this blog post](https://locize.com/blog/jquery-i18next/) and [this example](https://github.com/i18next/jquery-i18next/tree/master/example/landing).
 
 --------------
 
