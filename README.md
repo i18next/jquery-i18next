@@ -93,6 +93,7 @@ or
 ```js
 <a id="btn1" href="#" data-i18n="myKey" data-i18n-options='{ "a": "b" }'></a>
 $("#btn1").localize();
+// make sure you set the useOptionsAttr option to true if you want to pass the i18n options via data-i18n-options attribute.
 ```
 
 `data-i18n-options` attribute must be a valid JSON object.

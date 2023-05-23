@@ -1,8 +1,8 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.5.0/i18next.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" ></script>
     <!-- <script src="/jquery-i18next.min.js" ></script> -->
   </head>
 
@@ -16,12 +16,16 @@
 
     <div class="content">
       <input data-i18n="[placeholder]input.placeholder; [title]input.placeholder" />
+      <p data-i18n="[html]userMessagesUnread" data-i18n-options='{ "name": "John", "count": 3 }'>
+        Hello <strong>{{name}}</strong>, you have {{count}} unread messages
+      </p>
     </div>
 
     <script>
       // use plugins and options as needed, for options, detail see
       // http://i18next.com/docs/
       i18next.init({
+        // debug: true,
         lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
         resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
           en: {
@@ -33,14 +37,16 @@
                 home: 'Home',
                 page1: 'Page One',
                 page2: 'Page Two'
-              }
+              },
+              userMessagesUnread_one: 'Hello <strong>{{name}}</strong>, you have an unread message',
+              userMessagesUnread_other: 'Hello <strong>{{name}}</strong>, you have {{count}} unread messages'
             }
           }
         }
       }, function(err, t) {
         // for options see
         // https://github.com/i18next/jquery-i18next#initialize-the-plugin
-        jqueryI18next.init(i18next, $);
+        jqueryI18next.init(i18next, $, { useOptionsAttr: true });
 
         // start localizing, details:
         // https://github.com/i18next/jquery-i18next#usage-of-selector-function
