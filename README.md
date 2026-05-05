@@ -9,13 +9,13 @@ Needing a translation management? Want to edit your translations with an InConte
 
 ![locize](https://camo.githubusercontent.com/da390a7a7e25592b49d672b46924146fcddcf5618219a3c533edbfbd3f8b833c/68747470733a2f2f6c6f63697a652e636f6d2f696d672f6164732f6769746875625f6c6f63697a652e706e67)
 
-With using [locize](http://locize.com/?utm_source=jquery_i18next_readme&utm_medium=github) you directly support the future of i18next and react-i18next.
+With using [locize](https://www.locize.com/?utm_source=jquery_i18next_readme&utm_medium=github&utm_campaign=readme) you directly support the future of i18next and react-i18next.
 
 --------------
 
 ## Advice:
 
-To see jquery-i18next in a working app example, check out [this blog post](https://locize.com/blog/jquery-i18next/) and [this example](https://github.com/i18next/jquery-i18next/tree/master/example/landing).
+To see jquery-i18next in a working app example, check out [this blog post](https://www.locize.com/blog/jquery-i18next/?utm_source=jquery_i18next_readme&utm_medium=github&utm_campaign=readme) and [this example](https://github.com/i18next/jquery-i18next/tree/master/example/landing).
 
 --------------
 
@@ -170,7 +170,7 @@ $("#btn1").localize();
 <h3 align="center">Gold Sponsors</h3>
 
 <p align="center">
-  <a href="https://locize.com/" target="_blank">
+  <a href="https://www.locize.com/?utm_source=jquery_i18next_readme&utm_medium=github&utm_campaign=readme" target="_blank">
     <img src="https://raw.githubusercontent.com/i18next/i18next/master/assets/locize_sponsor_240.gif" width="240px">
   </a>
 </p>
