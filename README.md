@@ -78,6 +78,25 @@ jqueryI18next.init(i18nextInstance, $, {
 });
 ```
 
+## TypeScript
+
+jquery-i18next ships with type definitions. The `init` options are fully typed, and (when you keep the default handle names) `$.t`, `$.i18n` and `$(selector).localize(opts)` are added to the jQuery types via [`@types/jquery`](https://www.npmjs.com/package/@types/jquery).
+
+```ts
+import i18next from 'i18next';
+import jqueryI18next from 'jquery-i18next';
+
+jqueryI18next.init(i18next, $, {
+  useOptionsAttr: true, // typed, autocompleted and checked
+});
+
+$('.nav').localize();
+$('#btn1').localize({ count: 2 });
+const home: string = $.t('nav.home');
+```
+
+> If you rename the handles (`tName` / `i18nName` / `handleName`), the bundled jQuery augmentation still reflects the default names — type those custom members yourself via module augmentation.
+
 ## using options in translation function
 
 ```js

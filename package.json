@@ -4,6 +4,7 @@
   "description": "jQuery-i18next is a jQuery based Javascript internationalization library on top of i18next. It helps you to easily internationalize your web applications.",
   "main": "index.js",
   "jsnext:main": "dist/es/index.js",
+  "types": "index.d.ts",
   "keywords": [
     "i18next",
     "internationalization",
@@ -22,12 +23,27 @@
     "url": "https://github.com/i18next/jquery-i18next.git"
   },
   "dependencies": {},
+  "peerDependencies": {
+    "i18next": ">= 23.0.0",
+    "jquery": ">= 1.7.0"
+  },
+  "peerDependenciesMeta": {
+    "i18next": {
+      "optional": true
+    },
+    "jquery": {
+      "optional": true
+    }
+  },
   "devDependencies": {
+    "@types/jquery": "3.5.34",
     "babel-cli": "6.11.4",
     "babel-core": "6.13.2",
     "babel-eslint": "6.1.2",
     "babel-preset-es2015": "6.13.2",
     "babel-preset-stage-0": "6.5.0",
+    "i18next": "26.3.0",
+    "typescript": "5.9.3",
     "eslint": "3.3.1",
     "eslint-config-airbnb": "10.0.1",
     "mkdirp": "0.5.1",
@@ -47,6 +63,8 @@
     "build:amd": "rollup -c rollup.config.js --format amd && rollup -c rollup.config.js --format umd --uglify",
     "build:iife": "rollup -c rollup.config.js --format iife && rollup -c rollup.config.js --format iife --uglify",
     "build": "npm run clean && npm run build:cjs && npm run build:es && npm run build:umd && npm run copy",
+    "test:typescript": "tsc --noEmit --strict index.d.ts",
+    "test": "npm run test:typescript",
     "preversion": "npm run build && git push",
     "postversion": "git push && git push --tags"
   },
