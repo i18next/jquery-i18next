@@ -1,6 +1,6 @@
 # Introduction
 
-Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next), bower or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/jquery-i18next.min.js) from this repo or from a CDN like [CDNJS](https://cdnjs.com/libraries/jquery-i18next).
+Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next) or [downloaded](https://github.com/i18next/jquery-i18next/blob/master/jquery-i18next.min.js) from this repo or from a CDN like [CDNJS](https://cdnjs.com/libraries/jquery-i18next).
 
 --------------
 **NEWS: localization as a service - locize.com**
@@ -24,9 +24,6 @@ If you don't use a module loader it will be added to window.jqueryI18next
 ```
 # npm package
 $ npm install jquery-i18next
-
-# bower
-$ bower install jquery-i18next
 ```
 
 Simplifies i18next usage in projects built based on jquery, like:
