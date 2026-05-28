@@ -7,9 +7,9 @@ Source can be loaded via [npm](https://www.npmjs.com/package/jquery-i18next) or 
 
 Needing a translation management? Want to edit your translations with an InContext Editor? Use the orginal provided to you by the maintainers of i18next!
 
-![locize](https://camo.githubusercontent.com/da390a7a7e25592b49d672b46924146fcddcf5618219a3c533edbfbd3f8b833c/68747470733a2f2f6c6f63697a652e636f6d2f696d672f6164732f6769746875625f6c6f63697a652e706e67)
+![Locize](https://www.locize.com/img/ads/github_locize.png)
 
-With using [locize](https://www.locize.com/?utm_source=jquery_i18next_readme&utm_medium=github&utm_campaign=readme) you directly support the future of i18next and react-i18next.
+With using [Locize](https://www.locize.com/?utm_source=jquery_i18next_readme&utm_medium=github&utm_campaign=readme) you directly support the future of i18next.
 
 --------------
 
